@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    
+    <title>Lab 4: GNH Website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <script src = "../script.js"></script>
+</head>
+
+<body>
+    
+<ul class = "nav_bar">
+    <li><a class = "nav_item" href="../homepage.html">Home</a></li>
+    <li><a class = "nav_item" href="events_activities.html">Events and Activities</a></li>
+    <li><a class = "nav_item" href="sign_up_tutoring.html">Tutoring Sign-Up Form</a></li>
+
+</ul> 
+
+<h1>GNH Tutoring Sign up Form</h1>
+
+<h2>Information about our Tutoring:</h2>
+<p>Gamma Nu Eta tutoring will take place on Wednesdays from 1pm to 2pm. Tutoring will be in-person at the ITWS Lounge, which is located on the second floor of the Lally Building, right across from Linda’s office.</p>
+    
+<p>At these tutoring sessions, Gamma Nu Eta can help you with any course in your ITWS degree program. This includes ITWS core classes, such as Intro to ITWS and Web Systems, or classes outside of ITWS, such as Computer Science 1 and Data Structures. We can also help with any questions that you might have about career development, resumes, as well as just general questions about RPI. As we continue into this semester, we may adjust the time, place, and format of tutoring as circumstances change. </p>
+
+<p>If you have any questions or concerns about Gamma Nu Eta tutoring this semester, please feel free to reach out to either Andrew Smith or any of the other Gamma Nu Eta officers, and we will do our best to assist you.</p>
+
+<h2>Sign-Up for Tutoring Below!</h2>
+
+<div id="bodyBlock">
+    <form id="addForm" name="addForm" method="post">
+      <fieldset> 
+        <legend>GNH Tutoring Sign-Up Form</legend>
+        <div class="formData">
+
+          <label class="field" for="firstName">Full Name:</label>
+
+          <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value=""></div>
+          
+          <label class="field" for="email">RPI Email</label>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value=""/></div>
+
+          <label class="field" for="email">RCS ID</label>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RCS ID here" value=""/></div>
+          
+          <label class="field" for="phone">Class Year:</label>
+          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your class year here" value=""></div>
+
+          <label class="field" for="phone">Tutoring Date:</label>
+          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value=""></div>
+          
+          <label class="field" for="message">Questions/Comments: </label>
+          <!-- Here I have added two of my functions from the javascript file to run onclick and onblur to make the default appear and disappear -->
+          <div class="value"><textarea rows="4" cols="40" name="message" id="message" placeholder = "Please enter any questions or comments here"></textarea></div>
+          
+          <input type="submit" value="submit" id="submit" name="submit" onclick = "return validate(this)">
+        </div>
+      </fieldset>
+    </form>
+    
+</div>
+
+
+<footer>
+    <ul>
+        <li><a class = "no_social_media">Find us on Social Media!</a></li>
+        <li><a class = "social_media" href="https://www.facebook.com/gammanueta">Facebook</a></li>
+        <li><a class = "social_media" href="">Instagram</a></li>
+        <li><a class = "social_media" href="">Twitter</a></li>
+        <li><a class = "social_media" href="">Tiktok</a></li>
+        <li><a class = "social_media" href="">LinkedIn</a></li>
+        
+    </ul>
+</footer>
+
+</body>
+</html>
