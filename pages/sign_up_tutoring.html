@@ -33,30 +33,30 @@
 <div id="bodyBlock">
     <form id="addForm" name="addForm" method="post">
       <fieldset> 
-        <legend>GNH Tutoring Sign-Up Form</legend>
+        <h1 id="formHeader">GNH Tutoring Sign-Up Form</h1>
         <div class="formData">
 
           <label class="field" for="firstName">Full Name:</label>
 
           <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value=""></div>
           
-          <label class="field" for="email">RPI Email</label>
+          <label class="field" for="email">RPI Email:</label>
           <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value=""/></div>
 
           <label class="field" for="email">RCS ID</label>
-          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RCS ID here" value=""/></div>
+          <div class="value"><input type="text" size="60" name="rcsid" id="rcsid" placeholder = "Please enter your RCS ID here" value=""/></div>
           
-          <label class="field" for="phone">Class Year:</label>
-          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your class year here" value=""></div>
+          <label class="field" for="year">Class Year:</label>
+          <div class="value"><input type="text" size="60" name="year" id="year" placeholder = "Please enter your class year here" value=""></div>
 
-          <label class="field" for="phone">Tutoring Date:</label>
-          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value=""></div>
+          <label class="field" for="date">Tutoring Date:</label>
+          <div class="value"><input type="text" size="60" name="date" id="date" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value=""></div>
           
           <label class="field" for="message">Questions/Comments: </label>
           <!-- Here I have added two of my functions from the javascript file to run onclick and onblur to make the default appear and disappear -->
           <div class="value"><textarea rows="4" cols="40" name="message" id="message" placeholder = "Please enter any questions or comments here"></textarea></div>
           
-          <input type="submit" value="submit" id="submit" name="submit" onclick = "return validate(this)">
+          <input type="submit" value="Submit" id="submit" name="submit" onclick = "return validate(this)">
         </div>
       </fieldset>
     </form>

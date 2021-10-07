@@ -27,3 +27,75 @@ body{
     background-color: rgb(241, 77, 77);
     color: white;
 }
+
+#bodyBlock{
+    max-width: 50vw;
+    max-height: 70vw;
+	background: #f4f7f8f3;
+	margin: 2vw auto;
+	padding: 2vw;
+	border-radius: 2vw;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.formData{
+    font: 95% 'Roboto Condensed', sans-serif;
+	max-width: 35vw;
+	margin: 2vw auto;
+	padding: 1.5vw;
+	background: #F7F7F7;
+}
+
+ fieldset{
+    border:none;
+}
+ #formHeader{
+    background: rgb(84, 177, 240);
+	padding: 2vw 0;
+	font-size: 140%;
+	text-align: center;
+	color: #fff;
+    margin: -1vw -2vw -2vw -2vw;
+    border-radius: 2vw;
+}
+
+label{
+	outline: none;
+    width: 20%;
+    margin:2.5vw 0;
+    padding-bottom: 3vw;
+	color: #555;
+	font: 'Roboto Condensed', sans-serif;
+}
+.value{
+    margin-top: .3vw;
+    margin-bottom:1vw;
+    font: 'Roboto Condensed', sans-serif;
+}
+#year,#message, #date, #rcsid, #email, #firstName{
+    -webkit-transition: all 0.30s ease-in-out;
+	outline: none;
+	width: 100%;
+    border: 1px solid rgba(204, 204, 204, 0.527);
+    border-radius:.75vw;
+    padding:.75vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}   
+ #year:focus, #message:focus, #date:focus, #rcsid:focus, #email:focus, #firstName:focus{
+    box-shadow: 0 0 5px rgb(84, 177, 240);
+	padding: 3%;
+    border: 1px solid rgb(84, 177, 240);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#submit{
+    font-family: 'Roboto Condensed', sans-serif;
+	width: 105%;
+	padding: 3%;
+	background:rgb(84, 177, 240);
+    border-style: none;	
+    border-radius: .75vw;
+    color: #fff;
+    font-size: 1.5vw;
+    margin:none;
+}
