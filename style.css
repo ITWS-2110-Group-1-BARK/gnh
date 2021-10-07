@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-bar {
+    background-color: rgb(66, 58, 58);
+    overflow: hidden;
+}
+  
+.nav-bar a {
+    float: right;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2vw 1.5vw 2.7vw 1.5vw;
+    font-size: 19px;
+    margin:0;
+}
+  
+.nav-bar a:hover {
+    background-color: rgba(221, 221, 221, 0.856);
+    color: black;
+}
+
+.nav-bar a.active {
+    background-color: rgb(241, 77, 77);
+    color: white;
+}
