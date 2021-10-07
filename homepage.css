@@ -54,19 +54,25 @@ h6 {
   font-variant: large-caps;
   font-family: Aclonica;
 }
-#footer  {
+.footer  {
   padding: 10px 10px 0px 10px;
   bottom: 0;
   text-align: center;
   background: black;
 
  }
- #footer p{
+.footer p{
   color: white;
   font-size: 25px;
  }
+.footer button{
+  background-color: black; /* Green */
+  width: 125%;
+ }
  .flex-container {
   display: flex;
+   justify-content: center;
+  align-items: center;
 }
 
 .flex-container > div {
