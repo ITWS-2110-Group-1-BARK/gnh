@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
+    
     <title>Lab 4: GNH Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style.css"/>
+    <script src = "../script.js"></script>
 </head>
 
 <body>
     
-<div class="nav-bar">
-    <img id="logo" src="../images/RPIlogo.png" alt= "RPI logo" width=220vw height=70vw>
-    <a class = "active" href="sign_up_tutoring.html">Tutoring Sign-Up Form</a>
-    <a href="events_activities.html">Events and Activities</a>
-    <a href="../homepage.html">Home</a>
-</div>
-
+	<div class="nav-bar">
+		<img id="logo" src="../images/RPIlogo.png" alt= "RPI logo" width=300px height=85px>
+		<a class = "active" href="sign_up_tutoring.html">Tutoring Sign-Up Form</a>
+		<a href="events_activities.html">Events and Activities</a>
+		<a href="../homepage.html">Home</a>
+	</div>
 <h1>GNH Tutoring Sign up Form</h1>
 
 <h2>Information about our Tutoring:</h2>
@@ -38,19 +35,19 @@
 
           <label class="field" for="firstName">Full Name:</label>
 
-          <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value=""></div>
+          <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value="" required></div>
           
           <label class="field" for="email">RPI Email</label>
-          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value=""/></div>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value="" required></div>
 
           <label class="field" for="email">RCS ID</label>
-          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RCS ID here" value=""/></div>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RCS ID here" value="" required></div>
           
           <label class="field" for="phone">Class Year:</label>
-          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your class year here" value=""></div>
+          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your class year here" value="" required></div>
 
           <label class="field" for="phone">Tutoring Date:</label>
-          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value=""></div>
+          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value="" required></div>
           
           <label class="field" for="message">Questions/Comments: </label>
           <!-- Here I have added two of my functions from the javascript file to run onclick and onblur to make the default appear and disappear -->
@@ -64,22 +61,24 @@
 </div>
 
 
-<footer>
-    <!-- AJAX/JSON -->
-    <button id="contactBtn">Contact Us!</button>
-    <div id="contactInfo"></div>
-
-    <ul>
-        <li><a class = "no_social_media">Find us on Social Media!</a></li>
-        <li><a class = "social_media" href="https://www.facebook.com/gammanueta">Facebook</a></li>
-        <li><a class = "social_media" href="">Instagram</a></li>
-        <li><a class = "social_media" href="">Twitter</a></li>
-        <li><a class = "social_media" href="">Tiktok</a></li>
-        <li><a class = "social_media" href="">LinkedIn</a></li>
-        
-    </ul>
-</footer>
-
-<script src="/main.js"></script>
+<div class = "footer">  
+	<div class = "flex-container">
+		<div>
+			<p>Connect with us on Social Media!</p>
+			<a href="https://twitter.com/RPI_ITWS"> <img src="../social_media_images/twitter.png" style="width:40px;height:40px"></a>
+			<a href="https://www.facebook.com/gammanueta"><img src="../social_media_images/facebook.png" style="width:40px;height:40px"></a>
+			<a href="https://www.tiktok.com/@itwsatrpi?"><img src="../social_media_images/tiktok.png" style="width:40px;height:40px"></a>
+			<a href="https://itwsatrpi.blogspot.com/"><img src="../social_media_images/instagram.png" style="width:40px;height:40px"></a>
+			<a href="https://itwsatrpi.blogspot.com/"><img src="../social_media_images/linkedin.png" style="width:40px;height:40px"></a>
+		</div>
+		<div>
+			<a><img src="../images/Logo_Color_Transparent.png" style="width:20%;height:20%"></a>
+		</div>
+		<div>
+			<button id="contactBtn"><p>Contact Us!</p></button>
+		</div>
+	</div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
