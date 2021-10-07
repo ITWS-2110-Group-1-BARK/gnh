@@ -105,29 +105,35 @@ h6 {
   
 }
 
-/* Style the links inside the navigation bar */
-.nav_bar a {
-  float: right;
-  color: #72A0C1;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: Brush Script MT, Brush Script Std, cursive;
+body{
+    margin:0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav-bar {
+    background-color: black;
+    overflow: hidden;
+}
+  
+.nav-bar a {
+    float: right;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 2vw 1.5vw 2.7vw 1.5vw;
+    font-size: 19px;
+    margin:0;
+}
+  
+.nav-bar a:hover {
+    background-color: rgba(221, 221, 221, 0.856);
+    color: black;
 }
 
-/* Change the color of links on hover */
-.nav_bar a:hover {
-  background-color: #ddd;
-  color: red;
+.nav-bar a.active {
+    background-color: rgb(241, 77, 77);
+    color: white;
 }
-
-/* Add a color to the active/current link */
-.nav_bar a.active {
-  background-color: silver;
-  color: red;
-}
-/* Border line*/
 hr {
   width: 65%;
   height: 1px;
