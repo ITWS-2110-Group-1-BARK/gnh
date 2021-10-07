@@ -5,18 +5,18 @@
     <title>Lab 4: GNH Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="../style.css"/>
+	<link rel="stylesheet" type="text/css" href="homepage.css"/>
     <script src = "../script.js"></script>
 </head>
 
 <body>
     
-<ul class = "nav_bar">
-    <li><a class = "nav_item" href="../homepage.html">Home</a></li>
-    <li><a class = "nav_item" href="events_activities.html">Events and Activities</a></li>
-    <li><a class = "nav_item" href="sign_up_tutoring.html">Tutoring Sign-Up Form</a></li>
+<div class = "nav_bar">
+		<a href="homepage.html">Home</a>
+		<a href="events_activities.html">Events and Activities</a>
+		<a href="sign_up_tutoring.html">Tutoring Sign-Up Form</a>
 
-</ul> 
-
+	</div>
 <h1>GNH Tutoring Sign up Form</h1>
 
 <h2>Information about our Tutoring:</h2>
@@ -36,19 +36,19 @@
 
           <label class="field" for="firstName">Full Name:</label>
 
-          <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value=""></div>
+          <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value="" required></div>
           
           <label class="field" for="email">RPI Email</label>
-          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value=""/></div>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value="" required></div>
 
           <label class="field" for="email">RCS ID</label>
-          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RCS ID here" value=""/></div>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RCS ID here" value="" required></div>
           
           <label class="field" for="phone">Class Year:</label>
-          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your class year here" value=""></div>
+          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your class year here" value="" required></div>
 
           <label class="field" for="phone">Tutoring Date:</label>
-          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value=""></div>
+          <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value="" required></div>
           
           <label class="field" for="message">Questions/Comments: </label>
           <!-- Here I have added two of my functions from the javascript file to run onclick and onblur to make the default appear and disappear -->
