@@ -31,6 +31,8 @@ btn.addEventListener("click", function() {
     renderHTML(ourData);
     };
     ourRequest.send();
+    // change css with javascript
+    document.getElementById("contactBtn").style.display = "none"; 
 });
 
 function renderHTML(data) {
