@@ -325,7 +325,7 @@ p {
   font-size: 25px; 
   font-family: Apple Chancery, cursive;
   font-weight: 300;
-  color: white;
+  color:rgb(32, 44, 68);
 }
 
 #contactBtn {
@@ -350,9 +350,4 @@ p {
   list-style: none;
   color: rgb(32, 44, 68); 
   padding: 8%;
-}
-
-#logo {
-  width:220px;
-  height:70px;
 }
