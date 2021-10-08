@@ -11,11 +11,11 @@ var info = document.getElementById("contactInfo");
 btn.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
     if (page == "homepage.html"){
-        var toGet = 'data.json'
+        var toGet = 'data.json';
         console.log("homepage.html");   
     }
     else {
-        var toGet = '/data.json'
+        var toGet = '/data.json';
     }
     ourRequest.open('GET', toGet);
 
@@ -36,7 +36,7 @@ btn.addEventListener("click", function() {
 });
 
 function renderHTML(data) {
-    var htmlString = ""
+    var htmlString = "";
 
     // loop through data
     // email listed items are under class "mailing"
