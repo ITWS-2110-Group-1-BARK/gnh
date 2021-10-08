@@ -12,6 +12,7 @@ btn.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
     if (page == "homepage.html"){
         var toGet = 'data.json'
+        console.log("homepage.html");   
     }
     else {
         var toGet = '/data.json'
@@ -19,9 +20,7 @@ btn.addEventListener("click", function() {
     ourRequest.open('GET', toGet);
 
     ourRequest.onload = function(){
-    // shows in "Inspect" console
-    // console.log(ourRequest.responseText);   
-    
+    // shows in "Inspect" console    
     // reads as string not JSON
     // var ourData = ourRequest.responseText;
     
