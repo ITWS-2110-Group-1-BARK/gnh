@@ -348,4 +348,11 @@ p {
 
 #contactInfo {
   list-style: none;
+  color: rgb(32, 44, 68); 
+  padding: 8%;
+}
+
+#logo {
+  width:220px;
+  height:70px;
 }
