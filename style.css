@@ -2,10 +2,47 @@ html,
 #body {
   background-position: center right; 
   background-repeat: no-repeat;
-  background-image: url("background.jpg");
+  background-image: url("bg.jpeg");
   background-size: cover;
   
 }
+
+.pcontainer{
+    font-family: sans-serif;
+    text-align: left;
+    background: #ffffff;
+    opacity:80%;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    padding: 20px;
+    float:center;
+    margin: 30px;
+    margin-top:10vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pcontainer h2{
+    color:rgb(0, 0, 0);
+    font-family:  cursive;
+    margin-top:3vw;
+    font-size:4vw;
+    margin-bottom:2vw;
+    text-align: center;
+}
+
+.pcontainer h4 {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+.pcontainer p{
+    color:rgb(0, 0, 0);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 #container {
    min-height:100%;
    position:relative;
@@ -15,14 +52,14 @@ html,
 }
 h1 {
   text-align: center;
-  font-size: 100px; 
+  font-size: 80px; 
   margin: 0;
   padding: 0;
   font-variant: large-caps;
   font-family: Aclonica;
-  color: white;
+  color: black;
 } 
-h2 {
+.h2a {
   text-align: center;
   font-size: 55px; 
   margin: 0;
@@ -32,7 +69,7 @@ h2 {
   color: rgba(244, 253, 255, 0.836);
 }
 h3 {
-  color: white;
+  color: rgb(32, 44, 68);
   font-size: 35px; 
 }
 h4 {
@@ -58,13 +95,13 @@ h6 {
   padding: 0;
   font-variant: large-caps;
   font-family: Aclonica;
-  color:white;
+  color:rgb(0, 0, 0);
 }
 .footer  {
   padding: 10px 10px 0px 10px;
   bottom: 0;
   text-align: center;
-  background: black;
+  background: rgb(32, 44, 68);
 
  }
 .footer p{
@@ -72,7 +109,7 @@ h6 {
   font-size: 25px;
  }
 .footer button{
-  background-color: black; /* Green */
+  background-color: rgb(95, 127, 192);
   width: 125%;
  }
  .flex-container {
@@ -82,7 +119,7 @@ h6 {
 }
 
 .flex-container > div {
-  background-color: black;
+  background-color:  rgb(32, 44, 68);
   margin: 10px;
   padding: 20px;
   font-size: 30px;
@@ -103,26 +140,25 @@ h6 {
  }  
  #right{    
   float: right;  
- }  
-.nav_bar {
-  background-color: black;
-  overflow: hidden;
-  
-}
+ } 
 
 body{
     margin:0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .nav-bar {
-    background-color: black;
+    background: rgb(49, 64, 95);
     overflow: hidden;
+    position:fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
 }
-  
+
 .nav-bar a {
     float: right;
     text-decoration: none;
-    font-family: Apple Chancery, cursive;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
     text-align: center;
     padding: 2vw 1.5vw 2.7vw 1.5vw;
@@ -142,7 +178,7 @@ body{
 #bodyBlock{
     max-width: 50vw;
     max-height: 70vw;
-	background: #f4f7f8f3;
+    background:  rgb(240, 250, 255);
 	margin: 2vw auto;
 	padding: 2vw;
 	border-radius: 2vw;
@@ -154,7 +190,7 @@ body{
 	max-width: 35vw;
 	margin: 2vw auto;
 	padding: 1.5vw;
-	background: #F7F7F7;
+    background:  rgb(240, 250, 255);
 }
 
  fieldset{
@@ -175,7 +211,7 @@ label{
     width: 20%;
     margin:2.5vw 0;
     padding-bottom: 3vw;
-	color: #555;
+	color: black;
 	font: 'Roboto Condensed', sans-serif;
 }
 .value{
@@ -215,7 +251,7 @@ hr {
   height: 1px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
+  background-color: rgb(32, 44, 68);
   border: 0 none;
 }
 .card {
@@ -271,8 +307,9 @@ hr {
 /* Style the back side */
 .flip-card-back {
   background-color: transparent;
-  color: white;
+  color:rgb(32, 44, 68);
   transform: rotateY(180deg);
+  font-weight: 300;
 }
 .flip-card p{
   margin-left : 5%;
@@ -280,12 +317,35 @@ hr {
   font-size: 15px; 
   font-family: Apple Chancery, cursive;
   color: a9a9a9;
+  font-weight: 300;
 }
 p {
   margin-left : 5%;
   text-align: center;
   font-size: 25px; 
   font-family: Apple Chancery, cursive;
+  font-weight: 300;
   color: white;
+}
 
+#contactBtn {
+  margin-left : 5%;
+  text-align: center;
+  font-size: 25px; 
+  font-family: Apple Chancery, cursive;
+  font-weight: 300;
+  background:  rgb(32, 44, 68);
+  border: solid;
+  border-color:  rgb(32, 44, 68) ;
+  color: white;
+  padding: 8%;
+}
+
+#logo {
+  width:220px;
+  height:70px;
+}
+
+#contactInfo {
+  list-style: none;
 }

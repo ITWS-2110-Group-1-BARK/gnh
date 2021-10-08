@@ -4,26 +4,31 @@
     
     <title>Lab 4: GNH Website</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src = "script.js"></script>
 </head>
 <div id = "container">
 <div id = "body">
 		<!-- The navigation bar -->
 	<div class="nav-bar">
-		<img id="logo" src="images/RPIlogo.png" alt= "RPI logo" width=300px height=85px>
+		<img id="logo" src="images/RPIlogo.png" alt= "RPI logo">
 		<a href="pages/sign_up_tutoring.html">Tutoring Sign-Up Form</a>
 		<a href="pages/events_activities.html">Events and Activities</a>
 		<a class = "active" href="homepage.html">Home</a>
 	</div>
-	<div>
+	<div class="pcontainer">
 		<h1>Gamma Nu Eta</h1> 
-		<h2>(GNH) ITWS Honor Society</h2>
-	</div>
-	<hr></hr>
+		<h2 class="h2a">(GNH) ITWS Honor Society</h2>
+
+    
+
 	<h6> About Us </h6>
 	<p>Gamma Nu Eta (ΓΝΗ or GNH) is the national Information Technology Honor society for students here at RPI. Our mission is to recognize and promote leadership and excellence in the study of Information Technology; to offer knowledge and services to our members' schools and surrounding communities; and to play an active role in the application and evolution of Information Technology within society. Members must be strong academically, demonstrate leadership, campus involvement, and excellent character.</p>
-	<hr></hr>
+    <hr/><hr/>
+</div>
 	<div class = "flex-container_2">	
 		<!-- Information Regarding How to Join -->
 		<div class="flip-card">
@@ -65,24 +70,25 @@
 		</div>
 	</div>
 
-	</br>
+	<br/>
 
 	<!-- The footer bar containing GNH social media -->
 	<div class = "footer">  
 		<div class = "flex-container">
 			<div>
 				<p>Connect with us on Social Media!</p>
-				<a href="https://twitter.com/RPI_ITWS"> <img src="social_media_images/twitter.png" style="width:40px;height:40px"></a>
-				<a href="https://www.facebook.com/gammanueta"><img src="social_media_images/facebook.png" style="width:40px;height:40px"></a>
-				<a href="https://www.tiktok.com/@itwsatrpi?"><img src="social_media_images/tiktok.png" style="width:40px;height:40px"></a>
-				<a href="https://itwsatrpi.blogspot.com/"><img src="social_media_images/instagram.png" style="width:40px;height:40px"></a>
-				<a href="https://itwsatrpi.blogspot.com/"><img src="social_media_images/linkedin.png" style="width:40px;height:40px"></a>
+				<a href="https://twitter.com/RPI_ITWS"> <img src="social_media_images/twitter.png" alt = "Twitter logo" style="width:40px;height:40px"></a>
+				<a href="https://www.facebook.com/gammanueta"><img src="social_media_images/facebook.png" alt = "Facebook logo" style="width:40px;height:40px"></a>
+				<a href="https://www.tiktok.com/@itwsatrpi?"><img src="social_media_images/tiktok.png" alt = "tiktok logo" style="width:40px;height:40px"></a>
+				<a href="https://itwsatrpi.blogspot.com/"><img src="social_media_images/instagram.png" alt = "instagram logo" style="width:40px;height:40px"></a>
+				<a href="https://itwsatrpi.blogspot.com/"><img src="social_media_images/linkedin.png" alt = "linkedin logo" style="width:40px;height:40px"></a>
 			</div>
 			<div>
-				<a><img src="images/Logo_Color_Transparent.png" style="width:20%;height:20%"></a>
+				<a><img src="images/Logo_Color_Transparent.png" alt = "transparent logo" style="width:20%;height:20%"></a>
 			</div>
 			<div>
-				<button id="contactBtn"><p>Contact Us!</p></button>
+				<button id="contactBtn">Contact Us!</button>
+				<div id="contactInfo"></div>
 			</div>
 		</div>
 	</div>
